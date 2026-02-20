@@ -112,10 +112,11 @@ class handler(BaseHTTPRequestHandler):
                 if not image_data:
                     raise Exception('No file found')
                 
-                # Panggil Hugging Face API
+                # Ganti bagian ini (sekitar baris 85-90)
                 HF_TOKEN = os.environ.get('HF_TOKEN', '')
-                API_URL = "https://api-inference.huggingface.co/models/KenNicholas/breast-cancer-resnet50-gradcam"
-                
+                # GANTI URL INI:
+                API_URL = "https://router.huggingface.co/hf-inference/models/Ken2707/breakhis-resnet50"
+
                 headers = {"Authorization": f"Bearer {HF_TOKEN}"}
                 
                 response = requests.post(
