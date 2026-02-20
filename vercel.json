@@ -23,7 +23,4 @@
       "dest": "/api/predict.py"
     }
   ],
-  "env": {
-    "HF_TOKEN": "@hf_token"
-  }
 }
